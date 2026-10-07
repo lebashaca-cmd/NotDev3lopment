@@ -3,5 +3,4 @@ services:
     name: notcrest-bio
     env: static
     buildCommand: ""
-    publishDir: "."
-    healthCheckPath: "/index.html"
+    staticPublishDir: "."
