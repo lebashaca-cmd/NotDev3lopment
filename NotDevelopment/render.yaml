@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: notcrest-bio
+    env: static
+    buildCommand: "" # No build step needed for static HTML/JS/CSS
+    publishPath: "." # Publish the current directory
+    healthCheckPath: "/index.html"
