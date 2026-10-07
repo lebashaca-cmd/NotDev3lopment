@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio | NotCr3st</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'twinkle': 'twinkle var(--duration) infinite ease-in-out',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="relative">
+    <div id="starfield" class="fixed inset-0 pointer-events-none"></div>
+
+    <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-50">
+        <div class="nav-pill px-4 py-2 rounded-full flex items-center gap-6 text-gray-400">
+            <a href="#about" class="hover:text-green-400 transition-colors"><i class="fa-solid fa-house"></i></a>
+            <a href="#music" class="hover:text-green-400 transition-colors"><i class="fa-solid fa-music"></i></a>
+            <a href="#products" class="hover:text-green-400 transition-colors"><i class="fa-solid fa-desktop"></i></a>
+            <a href="#products" class="hover:text-green-400 transition-colors"><i class="fa-solid fa-tag"></i></a>
+            <div class="w-px h-4 bg-gray-700"></div>
+            <a href="#" class="hover:text-green-400 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </nav>
+
+    <main class="relative z-10 max-w-3xl mx-auto px-6 pt-32 pb-20 text-center scroll-smooth">
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="mb-32">
+            <div class="relative inline-block mb-6">
+                <img src="https://i.ibb.co/CKwjpVsN/image.png" alt="Avatar" class="w-32 h-32 rounded-full border-4 border-green-500/30 p-1">
+                <div class="absolute bottom-2 right-2 w-6 h-6 bg-green-500 border-4 border-black rounded-full"></div>
+            </div>
+            <h1 class="text-6xl font-extrabold text-green-400 glow-text mb-6">NotCr3st</h1>
+            <p class="text-lg text-gray-300 leading-relaxed mb-8 max-w-xl mx-auto">
+                hi i'm <span class="text-white font-semibold">NotCr3st</span>, i'm <span id="glitch-age" class="text-white font-semibold">16 years old</span> and an upcoming developer. i love to build things such as
+                <span class="text-green-400 underline decoration-green-500/50">discord bots</span>,
+                <span class="text-green-400 underline decoration-green-500/50">websites</span>, and a lot more.
+                i'm usually listening to music or helping clients on <span class="text-green-400 underline decoration-green-500/50">discord</span>.
+            </p>
+            <div class="flex justify-center gap-6 text-sm text-gray-400 mb-12">
+                <a href="#" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-brands fa-github"></i> github</a>
+                <a href="#" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-brands fa-discord"></i> discord</a>
+            </div>
+            <div class="glass p-4 rounded-2xl inline-flex items-center gap-4 text-left max-w-sm">
+                <img src="https://i.ibb.co/CKwjpVsN/image.png" alt="Mini Avatar" class="w-10 h-10 rounded-full">
+                <div>
+                    <div class="flex items-center gap-2">
+                        <span class="font-semibold text-white">Killbyte - Proxy</span>
+                        <span class="text-gray-500 text-xs">💬 🌐</span>
+                    </div>
+                    <a href="#" class="text-xs text-gray-400 hover:text-green-400 transition-colors">https://killbyte-tcuu.onrender.com/</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- MUSIC SECTION -->
+        <section id="music" class="mb-32 text-left">
+            <h2 class="text-3xl font-bold mb-2">Music</h2>
+            <p class="text-gray-500 text-sm mb-6">currently listening to</p>
+            <div id="spotify-status" class="glass p-6 rounded-2xl text-center text-gray-500 italic">Checking Spotify status...</div>
+        </section>
+
+        <!-- PRODUCTS SECTION -->
+        <section id="products" class="mb-32 text-left">
+            <p class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Products</p>
+            <h2 class="text-4xl font-bold text-green-400 glow-text mb-8">What we've built</h2>
+            <div class="space-y-6">
+                <div class="group relative p-4 rounded-2xl transition-all hover:bg-white/5 cursor-pointer">
+                    <div class="flex items-start gap-4">
+                        <img src="https://via.placeholder.com/50" alt="Project" class="w-12 h-12 rounded-xl">
+                        <div class="flex-1">
+                            <div class="flex items-center gap-2">
+                                <h3 class="text-xl font-semibold text-white group-hover:text-green-400 transition-colors">Killbyte (proxy) <i class="fa-solid fa-chevron-right text-xs opacity-50"></i></h3>
+                                <div class="ml-auto flex gap-3 text-xs text-gray-500"><span>2k+ users</span><span>20+ servers</span></div>
+                            </div>
+                            <p class="text-gray-400 text-sm mt-1">A brief description of your awesome project goes here.</p>
+                        </div>
+                    </div>
+                    <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-green-500 transition-all group-hover:h-full rounded-r-full"></div>
+                </div>
+                <div class="group relative p-4 rounded-2xl transition-all hover:bg-white/5 cursor-pointer">
+                    <div class="flex items-start gap-4">
+                        <img src="https://via.placeholder.com/50" alt="Project" class="w-12 h-12 rounded-xl">
+                        <div class="flex-1">
+                            <div class="flex items-center gap-2">
+                                <h3 class="text-xl font-semibold text-white group-hover:text-green-400 transition-colors">Another Project <i class="fa-solid fa-chevron-right text-xs opacity-50"></i></h3>
+                                <div class="ml-auto flex gap-3 text-xs text-gray-500"><span>500+ users</span></div>
+                            </div>
+                            <p class="text-gray-400 text-sm mt-1">A second project description that highlights different features.</p>
+                        </div>
+                    </div>
+                    <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-0 bg-green-500 transition-all group-hover:h-full rounded-r-full"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FRIENDS SECTION -->
+        <section class="text-center">
+            <h2 class="text-3xl font-bold mb-2">Friends</h2>
+            <p class="text-gray-500 text-sm mb-10">meet my friends you might like them too.</p>
+            <div class="flex justify-center gap-8" id="friends-list"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
